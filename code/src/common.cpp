@@ -32,7 +32,10 @@ bool wifiFirstConnected = false;
 struct tm timeinfo;
 
 // Display
-MatrixPanel_I2S_DMA *dma_display = nullptr;
+MatrixPanel_I2S_DMA *dma_display = nullptr; 
+
+// placeholder for the virtual display object
+VirtualMatrixPanel  *virtualDisp = nullptr;
 
 // Flags to trigger display updates
 bool clockStartingUp = true;

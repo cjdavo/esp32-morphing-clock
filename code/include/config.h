@@ -8,9 +8,9 @@
 #define NTP_REFRESH_INTERVAL_SEC 3600
 
 // Timezone difference from GMT, expressed in seconds
-#define TIMEZONE_DELTA_SEC 7200
+#define TIMEZONE_DELTA_SEC 28800
 // DST delta to apply
-#define TIMEZONE_DST_SEC 3600
+#define TIMEZONE_DST_SEC 0
 
 // How long are informational messages kept on screen
 #define LOG_MESSAGE_PERSISTENCE_MSEC 30000
@@ -28,8 +28,9 @@
 
 // Screen positioning settings
 // Panel size
-#define PANEL_WIDTH 128
+#define PANEL_WIDTH 256
 #define PANEL_HEIGHT 64
+#define VIRTUAL_MATRIX_CHAIN_TYPE CHAIN_BOTTOM_LEFT_UP
 
 // Clock
 #define CLOCK_X 3

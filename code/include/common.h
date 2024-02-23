@@ -42,6 +42,7 @@ extern bool syncEventTriggered; // True if a time event has been triggered
 
 //RGB display
 extern MatrixPanel_I2S_DMA *dma_display;
+extern VirtualMatrixPanel *virtualDisp;
 
 //Current time and date
 extern struct tm timeinfo;

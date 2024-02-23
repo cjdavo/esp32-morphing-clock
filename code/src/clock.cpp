@@ -72,15 +72,15 @@ void displayClock() {
 }
 
 void displayDate() {
-    dma_display->fillRect(DOW_X, DOW_Y, DATE_WIDTH, DATE_HEIGHT, 0);
+    virtualDisp->fillRect(DOW_X, DOW_Y, DATE_WIDTH, DATE_HEIGHT, 0);
 
-    dma_display->setTextSize(1);     // size 1 == 8 pixels high
-    dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
-    dma_display->setTextColor(DATE_COLOR);
+    virtualDisp->setTextSize(1);     // size 1 == 8 pixels high
+    virtualDisp->setTextWrap(false); // Don't wrap at end of line - will do ourselves
+    virtualDisp->setTextColor(DATE_COLOR);
 
-    dma_display->setCursor(DOW_X, DOW_Y);
-    dma_display->print(&timeinfo, "%a");
+    virtualDisp->setCursor(DOW_X, DOW_Y);
+    virtualDisp->print(&timeinfo, "%a");
 
-    dma_display->setCursor(DATE_X, DATE_Y);
-    dma_display->print(&timeinfo, "%d.%m");
+    virtualDisp->setCursor(DATE_X, DATE_Y);
+    virtualDisp->print(&timeinfo, "%d.%m");
 }
